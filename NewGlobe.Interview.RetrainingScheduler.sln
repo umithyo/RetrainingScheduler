@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3E76E284-D6E0-4860-9FF6-719F5751B98A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGlobe.Interview.RetrainingScheduler", "src\NewGlobe.Interview.RetrainingScheduler\NewGlobe.Interview.RetrainingScheduler.csproj", "{B806A2F4-0022-48EA-B5CF-6BEA2DCAC1DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6A16AF70-5D96-4FAA-A771-0E7D594A6964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGlobe.Interview.RetrainingScheduler.Tests", "tests\NewGlobe.Interview.RetrainingScheduler.Tests\NewGlobe.Interview.RetrainingScheduler.Tests.csproj", "{B30317FE-752F-409F-A9CE-16BE7CBE36B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B806A2F4-0022-48EA-B5CF-6BEA2DCAC1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B806A2F4-0022-48EA-B5CF-6BEA2DCAC1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B806A2F4-0022-48EA-B5CF-6BEA2DCAC1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B806A2F4-0022-48EA-B5CF-6BEA2DCAC1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30317FE-752F-409F-A9CE-16BE7CBE36B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30317FE-752F-409F-A9CE-16BE7CBE36B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30317FE-752F-409F-A9CE-16BE7CBE36B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30317FE-752F-409F-A9CE-16BE7CBE36B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B806A2F4-0022-48EA-B5CF-6BEA2DCAC1DA} = {3E76E284-D6E0-4860-9FF6-719F5751B98A}
+		{B30317FE-752F-409F-A9CE-16BE7CBE36B7} = {6A16AF70-5D96-4FAA-A771-0E7D594A6964}
+	EndGlobalSection
+EndGlobal
