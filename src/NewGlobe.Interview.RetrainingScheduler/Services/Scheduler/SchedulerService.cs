@@ -29,7 +29,7 @@ public class SchedulerService : ISchedulerService
             _logger.LogInformation("Reading input data from {path}", filePath);
             var input = await _fileSystem.File.ReadAllLinesAsync(filePath);
 
-            if (input == null || input.Length == 0)
+            if (input.Length == 0)
             {
                 _logger.LogError("Input data is empty or invalid");
                 return;
@@ -55,7 +55,7 @@ public class SchedulerService : ISchedulerService
                 PrintTrack($"Track {i + 1}", track);
             }
         }
-        catch (FileNotFoundException e)
+        catch (FileNotFoundException)
         {
             _logger.LogError("Input file could not be found on {path}", filePath);
             throw;
@@ -103,7 +103,6 @@ public class SchedulerService : ISchedulerService
     
     private List<Track> ScheduleSessions(List<Session> sessions)
     {
-        // Sort sessions in descending order of duration (longest sessions first)
         sessions = sessions.ToList();
 
         var tracks = new List<Track>();

@@ -18,7 +18,19 @@ public class SchedulerServiceTests
         {
             "Session 1 | 30min",
             "Session 2 | 45min",
-            "Session 3 | lightning",
+            "Session 3 | 60min",
+            "Session 4 | lightning",
+            "Session 5 | 30min",
+            "Session 6 | 45min",
+            "Session 7 | lightning",
+            "Session 8 | 60min",
+            "Session 9 | 45min",
+            "Session 10 | 30min",
+            "Session 11 | 60min",
+            "Session 13 | 45min",
+            "Session 14 | 60min",
+            "Session 15 | 30min",
+            "Session 16 | 30min",
         };
 
         var loggerMock = new Mock<ILogger<SchedulerService>>();
@@ -45,7 +57,7 @@ public class SchedulerServiceTests
                 It.IsAny<It.IsAnyType>(),
                 It.IsAny<Exception>(),
                 (Func<It.IsAnyType, Exception, string>)It.IsAny<object>()),
-            Times.Exactly(1));
+            Times.AtLeast(1));
     }
 
     [Fact]

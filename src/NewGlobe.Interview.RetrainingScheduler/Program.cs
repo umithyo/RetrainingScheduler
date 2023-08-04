@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.IO.Abstractions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,6 +9,7 @@ using Serilog;
 
 namespace NewGlobe.Interview.RetrainingScheduler;
 
+[ExcludeFromCodeCoverage]
 public class Program
 {
     public static async Task<int> Main(params string[] args)

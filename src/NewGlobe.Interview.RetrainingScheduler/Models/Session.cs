@@ -2,6 +2,6 @@
 
 public class Session
 {
-    public string Name { get; set; } = default!;
-    public int Duration { get; set; }
+    public string Name { get; init; } = default!;
+    public int Duration { get; init; }
 }
